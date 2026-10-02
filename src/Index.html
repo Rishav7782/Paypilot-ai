@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PayPilot - AI Finance Controller</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f9fc;
+      color: #111827;
+    }
+
+    nav {
+      background: white;
+      padding: 20px 8%;
+      border-bottom: 1px solid #e5e7eb;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav span {
+      color: #2563eb;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 70px 20px;
+    }
+
+    .hero {
+      text-align: center;
+    }
+
+    .tag {
+      color: #2563eb;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      font-size: 55px;
+      margin: 20px 0;
+    }
+
+    h1 span {
+      color: #2563eb;
+    }
+
+    .description {
+      max-width: 650px;
+      margin: auto;
+      color: #6b7280;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 8px;
+      background: #2563eb;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .dashboard {
+      margin: 60px auto;
+      max-width: 700px;
+      background: white;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    }
+
+    .amount {
+      font-size: 40px;
+      font-weight: bold;
+      margin: 25px 0 5px;
+    }
+
+    .stats {
+      display: flex;
+      gap: 15px;
+      margin-top: 30px;
+    }
+
+    .stat {
+      flex: 1;
+      background: #f8fafc;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 24px;
+    }
+
+    .stat small {
+      color: #6b7280;
+    }
+
+    .features {
+      display: flex;
+      gap: 20px;
+    }
+
+    .card {
+      flex: 1;
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+      border: 1px solid #e5e7eb;
+    }
+
+    .card p {
+      color: #6b7280;
+      line-height: 1.5;
+    }
+
+    @media(max-width:700px) {
+      h1 {
+        font-size: 40px;
+      }
+
+      .stats,
+      .features {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    Pay<span>Pilot</span>
+  </nav>
+
+  <main>
+
+    <section class="hero">
+      <div class="tag">AI-POWERED FINANCE CONTROL</div>
+
+      <h1>
+        Your payments.<br>
+        <span>Under control.</span>
+      </h1>
+
+      <p class="description">
+        PayPilot helps businesses detect payment mismatches,
+        duplicate transactions, failed payments and reconciliation issues.
+      </p>
+
+      <button onclick="alert('Transaction analysis started!')">
+        Analyze Transactions
+      </button>
+    </section>
+
+    <section class="dashboard">
+
+      <h3>Payment Overview</h3>
+
+      <div class="amount">₹1,24,850</div>
+
+      <p>Total transactions analyzed</p>
+
+      <div class="stats">
+
+        <div class="stat">
+          <strong>142</strong>
+          <small>Transactions</small>
+        </div>
+
+        <div class="stat">
+          <strong>6</strong>
+          <small>Issues Found</small>
+        </div>
+
+        <div class="stat">
+          <strong>97%</strong>
+          <small>Reconciled</small>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="features">
+
+      <div class="card">
+        <h3>↔ Smart Reconciliation</h3>
+        <p>
+          Compare payment and order records to identify mismatches.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>⚠ Issue Detection</h3>
+        <p>
+          Detect duplicate and failed transactions automatically.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>✦ AI Explanations</h3>
+        <p>
+          Get simple explanations of detected payment issues.
+        </p>
+      </div>
+
+    </section>
+
+  </main>
+
+</body>
+</html>
